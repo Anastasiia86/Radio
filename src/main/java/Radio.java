@@ -20,7 +20,7 @@ public class Radio {
 
     public void setNextStation() {
         if (currentStation < 9) {
-            currentStation++;
+            currentStation = currentStation + 1;
         } else {
             currentStation = 0;
         }
@@ -28,7 +28,7 @@ public class Radio {
 
     public void setPrevStation() {
         if (currentStation > 0) {
-            currentStation--;
+            currentStation = currentStation - 1;
         } else {
             currentStation = 9;
         }
@@ -48,7 +48,7 @@ public class Radio {
         this.currentVolume = currentVolume;
     }
 
-    public void setVolumeUp() { //повышение громкости
+    public void setVolumeUp() {
         if (currentVolume < 10) {
 
             currentVolume = currentVolume + 1;
