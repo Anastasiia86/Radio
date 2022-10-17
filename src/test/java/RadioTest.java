@@ -54,7 +54,7 @@ public class RadioTest {
     }
 
     @Test
-    void shouldSetStationOverMaxStation() {
+    void setStationOverMaxStation() {
         Radio radio = new Radio();
         radio.setCurrentStation(10);
 
@@ -64,7 +64,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldOverMaxStation1() {
+    public void setOverMaxStation1() {
         Radio radio = new Radio();
         radio.setCurrentStation(9);
         radio.setNextStation();
@@ -75,7 +75,7 @@ public class RadioTest {
     }
 
     @Test
-    void shouldSetStationBelowMinStation() {
+    void setStationBelowMinStation() {
         Radio radio = new Radio();
         radio.setCurrentStation(-1);
         radio.setPrevStation();
@@ -87,7 +87,7 @@ public class RadioTest {
     }
 
     @Test
-    void shouldSetBelowMinStation1() {
+    void setBelowMinStation1() {
         Radio radio = new Radio();
         radio.setCurrentStation(0);
         radio.setPrevStation();
@@ -136,7 +136,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldOverMaxVolume() {
+    public void setOverMaxVolume() {
         Radio radio = new Radio();
         radio.setCurrentVolume(10);
         radio.setVolumeUp();
@@ -148,7 +148,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldBelowMinVolume() {
+    public void setBelowMinVolume() {
         Radio radio = new Radio();
         radio.setCurrentVolume(-1);
         radio.setVolumeUp();
@@ -159,7 +159,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldOverMaxVolume2() {
+    public void setOverMaxVolume2() {
         Radio radio = new Radio();
         radio.setCurrentVolume(11);
         radio.setVolumeUp();
@@ -170,7 +170,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldBelowMinVolume2() {
+    public void setBelowMinVolume2() {
         Radio radio = new Radio();
         radio.setCurrentVolume(-1);
         radio.setVolumeDown();
