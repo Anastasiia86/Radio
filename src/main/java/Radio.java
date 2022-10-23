@@ -1,3 +1,9 @@
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
+
 public class Radio {
 
     private int currentStation;
@@ -7,9 +13,6 @@ public class Radio {
     private int minVolume = 0;
     private int maxVolume = 100;
 
-    public Radio() {
-        this.maxStation = 9;
-    }
 
     public Radio(int quantityStations) {
         this.maxStation = quantityStations - 1;
